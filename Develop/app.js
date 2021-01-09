@@ -1,7 +1,11 @@
-saveToLocal();
 for (i = 9; i < 18; i++){
     var someText = window.localStorage.getItem(i);
-    $(`#${i}`).html(someText);
+    console.log(someText);
+    if (someText === null) {
+    }
+    else {
+        $(`#${i}`).html(someText);
+    }
 }
 
 // Check if time is past due
