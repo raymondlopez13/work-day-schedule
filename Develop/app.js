@@ -1,3 +1,4 @@
+saveToLocal();
 for (i = 9; i < 18; i++){
     var someText = window.localStorage.getItem(i);
     $(`#${i}`).html(someText);
